@@ -1,7 +1,7 @@
 'use strict';
 
-module.exports = isJsObject;
+module.exports = isRegExp;
 
-function isJsObject(obj) {
+function isRegExp(obj) {
   return Object.prototype.toString.call(obj) === '[object RegExp]';
 }

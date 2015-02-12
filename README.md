@@ -1,26 +1,26 @@
-# is-js-obj-empty
+# is.regexp
 
-checks the given **js object** is empty
+checks the given value is a **RegExp Object**
 
-<a href="https://nodei.co/npm/is-js-obj-empty/"><img src="https://nodei.co/npm/is-js-obj-empty.png?downloads=true"></a>
+<a href="https://nodei.co/npm/is-js-obj-empty/"><img src="https://nodei.co/npm/is.regexp.png?downloads=true"></a>
 
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat-square)](https://travis-ci.org/joaquimserafim/is-js-obj-empty)![Code Coverage 100%](https://img.shields.io/badge/code%20coverage-100%25-green.svg?style=flat-square)[![ISC License](https://img.shields.io/badge/license-ISC-blue.svg?style=flat-square)](https://github.com/joaquimserafim/is-js-obj-empty/blob/master/LICENSE)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat-square)](https://travis-ci.org/joaquimserafim/is-regexp)![Code Coverage 100%](https://img.shields.io/badge/code%20coverage-100%25-green.svg?style=flat-square)[![ISC License](https://img.shields.io/badge/license-ISC-blue.svg?style=flat-square)](https://github.com/joaquimserafim/is-regexp/blob/master/LICENSE)
 
 ## API
-`var isEmpty = require('is-js-obj-empty')`
+`var isRegExp = require('is.regexp')`
 
-**isEmpty(*JS Object*)**
+**isRegExp(*RegExp Object*)**
 
 ## Usage
 
 ```js
-var isEmpty = require('is-js-obj-empty');
+var isRegExp = require('is.regexp');
 
-var obj1 = {text: 'Hello World!'};
+var obj1 = /2[0-4][0-9]/
 var obj2 = {};
 
-var empty1 = isEmpty(obj1);// should return false
-var empty1 = isEmpty(obj2);// should return true
+isRegExp(obj1);// should return true
+isRegExp(obj2);// should return false
 ```
 
 

@@ -5,7 +5,7 @@ var isRegExp  = require('./');
 
 test('should test valids RegExp Objects', function(assert) {
   assert.deepEqual(isRegExp(/[a-z]/), true);
-  assert.deepEqual(isRegExp(new RegExp('^a')), true);
+  assert.deepEqual(isRegExp(new RegExp('2[0-4][0-9]')), true);
   assert.end();
 });
 

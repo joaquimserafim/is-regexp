@@ -11,7 +11,7 @@ test('should test valids RegExp Objects', function(assert) {
 
 test('should test invalids RegExp Objects', function(assert) {
   /*jshint -W009 */
-  ['1', '', 1, null, undefined, [], false, Object, new Array()]
+  ['1', '', 1, null, undefined, [], false, Object, new Array(), function() {}]
     .forEach(function(value) {
       assert.deepEqual(isRegExp(value), false);
     });

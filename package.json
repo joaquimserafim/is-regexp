@@ -1,6 +1,6 @@
 {
   "name": "is.regexp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "checks the given value is a RegExp Object",
   "main": "index.js",
   "files": [

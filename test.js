@@ -10,8 +10,9 @@ test('should test valids RegExp Objects', function(assert) {
 });
 
 test('should test invalids RegExp Objects', function(assert) {
+  var fn = function() {};
   /*jshint -W009 */
-  ['1', '', 1, null, undefined, [], false, Object, new Array(), function() {}]
+  ['1', '', 1, null, undefined, [], false, Object, new Array(), fn, fn()]
     .forEach(function(value) {
       assert.deepEqual(isRegExp(value), false);
     });
